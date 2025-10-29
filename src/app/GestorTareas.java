@@ -18,9 +18,19 @@ public class GestorTareas {
     /**
      * Agrega una nueva tarea a la lista.
      */
+    /**
+     * Agrega una nueva tarea a la lista.
+     */
     public void agregarTarea(Tarea tarea) {
-        // TODO: Implementar por Miembro 1
-        System.out.println("⚠️ Método agregarTarea() pendiente de implementación");
+        // Validar que la tarea no sea nula
+        if (tarea == null) {
+            System.out.println("❌ Error: La tarea no puede ser nula");
+            return;
+        }
+
+        // Agregar a la lista
+        tareas.add(tarea);
+        System.out.println("✅ Tarea agregada exitosamente");
     }
     // ============================================
     // MÉTODO PARA MIEMBRO 2: Listar tareas
